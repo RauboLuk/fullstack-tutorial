@@ -39,6 +39,12 @@ type Query {
   me: User
 }
 
+type TripUpdateResponse {
+  success: Boolean!
+  message: String
+  launches: [Launch]
+}
+
 type Mutation {
   bookTrips(launchIds: [ID]!): TripUpdateResponse!
   cancelTrip(launchId: ID!): TripUpdateResponse!
