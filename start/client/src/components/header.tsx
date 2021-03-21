@@ -24,7 +24,8 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ image, children = 'Space Explorer' }) => {
-  const email = atob(localStorage.getItem('token') as string);
+  // const email = atob(localStorage.getItem('token') as string);
+  const email = 'lr';
   const avatar = image || pickAvatarByEmail(email);
 
   return (
