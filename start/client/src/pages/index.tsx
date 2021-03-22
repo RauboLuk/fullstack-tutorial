@@ -6,13 +6,11 @@ import Launches from './launches';
 import Cart from './cart';
 import Profile from './profile';
 import { Footer, PageContainer } from '../components';
-import Login from './login';
 
 export default function Pages() {
   return (
     <Fragment>
       <PageContainer>
-        <Login />
         <Router primary={false} component={Fragment}>
           <Launches path="/" />
           <Launch path="launch/:launchId" />
